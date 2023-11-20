@@ -31,10 +31,6 @@
                 <p class="text-pink-400">Hello, my name is</p>
                 <h1 class="flex items-center text-3xl font-bold">Sneha Varshney</h1>
                 <p class="font-semibold">I'm a Web Developer</p>  
-                <div class="relative mt-3 ">
-                    <input class="mt-2 p-2 w-full md:w-[150%] rounded-2xl outline-none text-black" type="text" placeholder="Enter Your Email">
-                    <button class="bg-red-700 text-sm whitespace-nowrap absolute top-[9px] right-1 p-2 md:left-64 rounded-xl">let's start</button>
-                </div>
             </div>    
             <img class="hidden md:block md:h-72 lg:h-full" src="Images/About.png" alt="About Me">
         
@@ -100,30 +96,40 @@
         </div>
 
         <!--------------- CONTACT ME  ------------------>
-        <div class="m-5">
-            <h2 class="text-6xl font-bold">Contact Me</h2>
-            <div class="mt-4">
-                <div class="flex space-x-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="20">
-                        <g>
-                            <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" fill="#FF0000"/>
-                            <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" fill="#FF0000"/>
-                            <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" fill="#FF0000"/>
-                        </g>
-                    </svg> 
-                    <a href="#">varshneysneha1109@gmail.com</a>
+        <div class="m-5 md:m-5 relative">
+            <h2 class="text-3xl md:text-6xl font-bold text-center">Contact With Me</h2>
+            <div class="md:m-10 bg-mix md:flex lg:rounded-bl-full">
+                <div class="p-2 md:p-10">
+                    Phone: +91 7037353732 <br>
+                    Email: varshneysneha1109@gmail.com
                 </div>
-                <div class="flex space-x-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="20">
-                        <g>
-                            <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" fill="#FF0000"/>
-                            <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" fill="#FF0000"/>
-                            <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" fill="#FF0000"/>
-                        </g>
-                    </svg> 
-                    <a href="#">+91 7037353732</a>
-                </div> 
-                <button class="bg-red-500 mt-4 px-4 py-2 rounded">Download CV</button>               
+                
+                <div class="md:p-10 flex flex-col space-y-5 flex-grow">
+                    <input class="bg-skin rounded-lg text-center p-1.5 outline-none text-black" name="name" placeholder="Your Name">
+                    <input class="bg-skin rounded-lg text-center p-1.5 outline-none text-black" name="phone" placeholder="Your Phone Number">
+                    <input class="bg-skin rounded-lg text-center p-1.5 outline-none text-black" type="email" name="email" placeholder="Your Email">
+                    <input class="bg-skin rounded-lg text-center p-1.5 outline-none text-black" name="message" placeholder="Your Message">
+                    <input type="button" class="bg-skin rounded-lg text-center p-1.5 outline-none text-black font-semibold cursor-pointer border-none mt-auto" value="Send Message">
+                </div>
+            </div>
+        </div>
+        
+        <!--------------- Footer  ------------------>
+        <div class="m-5 md:flex md:justify-between">
+            <div>
+                <h3 class="font-bold">Quick Links</h3>
+                <div class="flex space-x-7">
+                    <a href="#">About Me</a>
+                    <a href="#">Terms & Condition</a>
+                    <a href="#">Contact Me</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold">Follow Me On</h3>
+                <div class="flex space-x-7">
+                    <a href="#">LinkdIn</a>
+                    <a href="#">GitHub</a>
+                </div>
             </div>
         </div>
     </main>
