@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
-</head>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-black m-0 p-0">
+  <body class="bg-black m-0 p-0">
     <main class="text-white">
-        <div class="flex justify-between font-semibold bg-white text-black p-4 top-0 w-full fixed">
-            <h3>Portfolio</h3>
-            <ul class="flex space-x-3 uppercase">
-                <li class="">
-                    <a href="#">Home</a>
-                </li>
-                <li class="">
-                    <a href="#">About</a>
-                </li>
-                <li class="">
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="m-20 mt-36 text-center">
-            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text">Debugging the present, coding the future.</h1>
-        </div>
-        <!--------------- ABOUT ME  ------------------>
-        <div class="mt-10 flex justify-center items-center h-screen" style="background-image: url('/Images/about-bg.jpg');">
-            <div>
-                <div class="mb-4"><h1 class="text-6xl font-bold">About Me</h1></div>
-                <div class="pt-10 flex" style="background-color: rgba(0, 0, 0, 0.5);">
-                    <div >
-                        <img class="rounded-full bg-white h-1/2 ml-10" src="/Images/Mine.png">
+      <div
+        class="flex justify-between font-semibold bg-white text-black p-4 top-0 w-full fixed"
+      >
+        <h3>Portfolio</h3>
+        <ul class="flex space-x-3 uppercase">
+          <li class="">
+            <a href="#">Home</a>
+          </li>
+          <li class="">
+            <a href="#">About</a>
+          </li>
+          <li class="">
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="m-20 mt-36 text-center">
+        <h1
+          class="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text"
+        >
+          Debugging the present, coding the future.
+        </h1>
+      </div>
+      <!--------------- ABOUT ME  ------------------>
+      <div
+        class="mt-10 flex justify-center items-center h-screen bg-cover"
+        style="background-image: url('/Images/about-bg.jpg')"
+      >
+        <div>
+          <div class="pt-14 pb-4">
+            <h1 class="text-6xl font-bold flex justify-center">About Me</h1>
+          </div>
+          <div class="flex justify-center items-center">
+            <div
+              class="pt-10 mx-[8%] md:mx-[20%] lg:mx-[25%] flex justify-center"
+              style="background-color: rgba(0, 0, 0, 0.32)"
+            >
+              <div class="flex">
+                <div class="aspect-w-1 aspect-h-1 md:flex">
+                  <div class="flex justify-center items-center">
+                    <div class="flex flex-col items-center">
+                      <img
+                        class="object-cover lg:rounded-full w-36 h-36 bg-white m-3 mx-auto"
+                        src="/Images/Mine.png"
+                        alt="Your image"
+                      />
+                      <p class="text-white p-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Autem atque quam incidunt modi voluptas a esse vitae
+                        praesentium vero, pariatur dolores reiciendis est iusto
+                        consequuntur quasi voluptatem quo. Error, nobis iure
+                        autem ut vitae soluta, incidunt officia ipsa ullam
+                        accusamus laboriosam reprehenderit ab voluptatum
+                        provident necessitatibus unde repellendus quam
+                        doloremque!
+                      </p>
                     </div>
-                    <div class="space-y-5">
-
-                        <h3 class="text-lg">Developer & Designer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse repellendus beatae deleniti deserunt saepe dolorem, perferendis illo maxime delectus.</p>
-                        <div class="flex space-x-10 mt-3">
-                            <a class="border-b border-red-500" href="#">Skills</a>
-                            <a href="#">Experience</a>
-                            <a href="#">Education</a>
-                        </div>
-                        <button class="bg-red-700 p-2 rounded-xl">let's talk</button>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            
-            
-            <!-- <div class="space-y-5">
+          </div>
+        </div>
+
+        <!-- <div class="space-y-5">
                 <h1 class="text-6xl font-bold">About Me</h1>
                 <h3 class="text-lg">Developer & Designer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse repellendus beatae deleniti deserunt saepe dolorem, perferendis illo maxime delectus.</p>
@@ -63,89 +87,187 @@
                 </div>
                 <button class="bg-red-700 p-2 rounded-xl">let's talk</button>
             </div> -->
-            <!-- <img class="hidden md:block md:h-72 lg:h-full border-4 border-white bg-gray-950" src="Images/About.png" alt="About Me"> -->
-        </div>
-        
-        <!--------------- OUR SERVICES  ------------------>
-        <div class="m-5">
-            <h2 class="text-6xl font-bold text-center">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 md:space-x-2">
-                <div class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30">
-                        <g>
-                            <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" fill="#FFFFFF"/>
-                            <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" fill="#FFFFFF"/>
-                            <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" fill="#FFFFFF"/>
-                        </g>
-                    </svg> 
-                    <h2 class="text-lg">Web Development</h2>
-                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quod?</p>
-                    <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
-                </div>
-                <div class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30">
-                        <g>
-                            <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" fill="#FFFFFF"/>
-                            <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" fill="#FFFFFF"/>
-                            <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" fill="#FFFFFF"/>
-                        </g>
-                    </svg> 
-                    <h2 class="text-lg">Web Development</h2>
-                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quod?</p>
-                    <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
-                </div>
-                <div class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30">
-                        <g>
-                            <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z" fill="#FFFFFF"/>
-                            <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z" fill="#FFFFFF"/>
-                            <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z" fill="#FFFFFF"/>
-                        </g>
-                    </svg> 
-                    <h2 class="text-lg">Web Development</h2>
-                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quod?</p>
-                    <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
-                </div>
-            </div>
-        </div>
+        <!-- <img class="hidden md:block md:h-72 lg:h-full border-4 border-white bg-gray-950" src="Images/About.png" alt="About Me"> -->
+      </div>
 
-        <!--------------- CONTACT ME  ------------------>
-        <div class="m-5 md:m-5 relative">
-            <h2 class="text-3xl md:text-6xl font-bold text-center">Contact With Me</h2>
-            <div class="md:m-10 md:flex lg:rounded-bl-full">
-                <div class="p-2 md:p-10">
-                    Phone: +91 7037353732 <br>
-                    Email: varshneysneha1109@gmail.com
-                </div>
-                
-                <div class="md:p-10 flex flex-col space-y-5 flex-grow border">
-                    <input class=" rounded-lg text-center p-1.5 outline-none text-black" name="name" placeholder="Your Name">
-                    <input class="rounded-lg text-center p-1.5 outline-none text-black" name="phone" placeholder="Your Phone Number">
-                    <input class="rounded-lg text-center p-1.5 outline-none text-black" type="email" name="email" placeholder="Your Email">
-                    <input class="rounded-lg text-center p-1.5 outline-none text-black" name="message" placeholder="Your Message">
-                    <input type="button" class="bg-white rounded-lg text-center p-1.5 text-black outline-none  font-semibold cursor-pointer border-none mt-auto" value="Send Message">
-                </div>
-            </div>
+      <!--------------- OUR SERVICES  ------------------>
+      <div class="m-5">
+        <h2 class="text-6xl font-bold text-center">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:space-x-2">
+          <div
+            class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              width="30"
+            >
+              <g>
+                <path
+                  d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+            <h2 class="text-lg">Web Development</h2>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              quod?
+            </p>
+            <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
+          </div>
+          <div
+            class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              width="30"
+            >
+              <g>
+                <path
+                  d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+            <h2 class="text-lg">Web Development</h2>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              quod?
+            </p>
+            <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
+          </div>
+          <div
+            class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              width="30"
+            >
+              <g>
+                <path
+                  d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+            <h2 class="text-lg">Web Development</h2>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              quod?
+            </p>
+            <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
+          </div>
         </div>
-        
-        <!--------------- Footer  ------------------>
-        <div class="m-5 md:flex md:justify-between space-y-5 p-2 rounded-md">
-            <div>
-                <h3 class="font-bold">Quick Links</h3>
-                <div class="flex space-x-7">
-                    <a href="#">About Me</a>
-                    <a href="#">Terms & Condition</a>
-                    <a href="#">Contact Me</a>
-                </div>
-            </div>
-            <div>
-                <h3 class="font-bold">Follow Me On</h3>
-                <div class="flex space-x-7">
-                    <a href="#">LinkdIn</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
+      </div>
+
+      <!--------------- CONTACT ME  ------------------>
+      <div class="m-5 md:m-5 relative">
+        <h2 class="text-3xl md:text-6xl font-bold text-center">
+          Contact With Me
+        </h2>
+        <div class="md:m-10 md:flex lg:rounded-bl-full">
+          <div class="p-2 md:p-10">
+            Phone: +91 7037353732 <br />
+            Email: varshneysneha1109@gmail.com
+          </div>
+
+          <div class="md:p-10 flex flex-col space-y-5 flex-grow border">
+            <input
+              class="rounded-lg text-center p-1.5 outline-none text-black"
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              class="rounded-lg text-center p-1.5 outline-none text-black"
+              name="phone"
+              placeholder="Your Phone Number"
+            />
+            <input
+              class="rounded-lg text-center p-1.5 outline-none text-black"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+            />
+            <input
+              class="rounded-lg text-center p-1.5 outline-none text-black"
+              name="message"
+              placeholder="Your Message"
+            />
+            <input
+              type="button"
+              class="bg-white rounded-lg text-center p-1.5 text-black outline-none font-semibold cursor-pointer border-none mt-auto"
+              value="Send Message"
+            />
+          </div>
         </div>
+      </div>
+
+      <!--------------- Footer  ------------------>
+      <div class="m-5 md:flex md:justify-between space-y-5 p-2 rounded-md">
+        <div>
+          <h3 class="font-bold">Quick Links</h3>
+          <div class="flex space-x-7">
+            <a href="#">About Me</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Me</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold">Follow Me On</h3>
+          <div class="flex space-x-7">
+            <a href="#">LinkdIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
