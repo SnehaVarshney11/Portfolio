@@ -7,7 +7,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
 
-  <body class="bg-black m-0 p-0">
+  <body class="bg-black m-0 p-0 text-justify">
     <main class="text-white">
       <div
         class="text-sm flex justify-between font-semibold bg-white text-black p-4 top-0 w-full fixed"
@@ -42,7 +42,11 @@
       >
         <div>
           <div class="pt-14 pb-4">
-            <h1 class="text-3xl md:text-6xl font-bold text-center uppercase flex-grow">About Me</h1>
+            <h1
+              class="text-3xl md:text-6xl font-bold text-center uppercase flex-grow"
+            >
+              About Me
+            </h1>
           </div>
           <div class="flex justify-center items-center">
             <div
@@ -58,7 +62,7 @@
                         src="/Images/Mine.png"
                         alt="Your image"
                       />
-                      <p class="text-white p-3">
+                      <p class="text-white p-3 font-bold">
                         Hello, I'm Sneha Varshney, an accomplished software
                         developer immersed in the dynamic world of Accenture.
                         Armed with a degree in Engineering, my journey unfolds
@@ -75,19 +79,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="space-y-5">
-                <h1 class="text-6xl font-bold">About Me</h1>
-                <h3 class="text-lg">Developer & Designer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse repellendus beatae deleniti deserunt saepe dolorem, perferendis illo maxime delectus.</p>
-                <div class="flex space-x-10 mt-3">
-                    <a class="border-b border-red-500" href="#">Skills</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Education</a>
-                </div>
-                <button class="bg-red-700 p-2 rounded-xl">let's talk</button>
-            </div> -->
-        <!-- <img class="hidden md:block md:h-72 lg:h-full border-4 border-white bg-gray-950" src="Images/About.png" alt="About Me"> -->
       </div>
 
       <!--------------- EXPERIENCE  ------------------>
@@ -101,12 +92,12 @@
           <div class="m-5 flex space-x-2 md:space-x-10 justify-center mx-auto">
             <a href="/HTML/Experience.html"
               ><img
-                class="w-40 h-40 md:w-72 md:h-72"
+                class="w-40 h-40 md:w-72 md:h-72 border-2 border-blue-600"
                 src="/Images/accenture.jpg"
             /></a>
             <a href="/HTML/Experience.html"
               ><img
-                class="w-40 h-40 md:w-72 md:h-72"
+                class="w-40 h-40 md:w-72 md:h-72 border-2 border-blue-600"
                 src="/Images/insureka.png"
             /></a>
           </div>
@@ -115,18 +106,22 @@
 
       <!--------------- Projects  ------------------>
       <div class="m-5">
-        <h2 class="text-3xl md:text-6xl font-bold text-center uppercase flex-grow">My Projects</h2>
+        <h2
+          class="text-3xl md:text-6xl font-bold text-center uppercase flex-grow"
+        >
+          My Projects
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 md:space-x-2">
           <div
             class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
           >
-          <a href="/HTML/BankManagment.html">
-            <img
-              src="/Images/BankSystem.png"
-              class="w-20 h-20 rounded-full border-2 border-black"
-            />
-          </a>
-            
+            <a href="/HTML/BankManagment.html">
+              <img
+                src="/Images/BankSystem.png"
+                class="w-20 h-20 rounded-full border-2 border-black"
+              />
+            </a>
+
             <h2 class="text-lg font-bold uppercase">Bank Management System</h2>
             <p class="text-center">
               It is a Java Application made using the Swing Package of Java and
@@ -135,37 +130,40 @@
             <a href="/HTML/BankManagment.html">
               <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
             </a>
-           
           </div>
+
+          <div
+            class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
+          >
+            <a href="/HTML/Natours.html">
+              <img
+                src="/Images/Natours.png"
+                class="w-20 h-20 rounded-full border-2 border-black"
+              />
+            </a>
+
+            <h2 class="text-lg font-bold uppercase">Natours Website</h2>
+            <p class="text-center">
+              Natours is a website template. It's a sleek and modern
+              showcase for the travel industry. Perfect for travel blogs, tour
+              bookings
+            </p>
+            <a href="/HTML/Natours.html">
+              <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
+            </a>
+          </div>
+
           <div
             class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
           >
             <img
-              src="/Images/Natours.png"
+              src="/Images/flappyBird.jpg"
               class="w-20 h-20 rounded-full border-2 border-black"
             />
-            <h2 class="text-lg font-bold uppercase">Natours Website</h2>
-            <p class="text-center">
-              Natours stands as a virtual masterpiece, a digital haven tailored
-              for discerning nature aficionados and thrill-seeking adventurers.
-              Within this..
-              <!-- enchanting web application, the allure of immersive
-              nature-based adventure tours unfolds - a captivating showcase,
-              inviting users to explore the boundless wonders of a carefully
-              curated world. This demo application serves as a testament to the
-              seamless blend of technology and the call of the wild, providing a
-              glimpse into the extraordinary possibilities that lie ahead for
-              explorers of the digital realm. -->
-            </p>
-            <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
-          </div>
-          <div
-            class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
-          >
-            <img src="/Images/flappyBird.jpg" class="w-20 h-20 rounded-full border-2 border-black" />
             <h2 class="text-lg font-bold uppercase">Flappy Bird</h2>
             <p class="text-center">
-              Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right.
+              Flappy Bird is an arcade-style game in which the player controls
+              the bird Faby, which moves persistently to the right.
             </p>
             <button class="bg-red-500 px-4 py-2 rounded-lg">Read More</button>
           </div>
@@ -230,5 +228,12 @@
         </div>
       </div>
     </main>
+
+    <!-- To prevent img download  -->
+    <!-- <script>
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+      });
+    </script> -->
   </body>
 </html>
