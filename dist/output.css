@@ -896,6 +896,15 @@ video {
   outline-offset: 2px;
 }
 
+.visited\:bg-red-300:visited {
+  background-color: rgb(252 165 165 );
+}
+
+.active\:bg-red-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:m-10 {
     margin: 2.5rem;
