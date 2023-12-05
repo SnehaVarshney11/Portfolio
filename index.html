@@ -63,16 +63,23 @@
                         src="/Images/Mine.png"
                         alt="Your image"
                       />
-                      <p class="text-white p-3 font-bold">
-                        Hello, I'm Sneha Varshney, an accomplished software
-                        developer immersed in the dynamic world of Accenture.
-                        Armed with a degree in Engineering, my journey unfolds
-                        in lines of code that I passionately craft. Beyond being
-                        a mere profession, coding is my fervor, and this
-                        platform is a testament to the skills I've cultivated—a
-                        space where innovation and dedication converge in my
-                        software development endeavors.
-                      </p>
+                      <div class="p-3 font-bold">
+                        <p class="text-white">
+                          Hello, I'm Sneha Varshney, an accomplished software
+                          developer immersed in the dynamic world of Accenture.
+                          Armed with a degree in Engineering, my journey unfolds
+                          in lines of code that I passionately craft. Beyond
+                          being a mere profession, coding is my fervor, and this
+                          platform is a testament to the skills I've
+                          cultivated—a space where innovation and dedication
+                          converge in my software development endeavors.
+                        </p>
+                        <a href="/PDF/resume.pdf">
+                          <button class="border-2 bg-blue-200 text-black p-1">
+                            Download CV
+                          </button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -129,7 +136,11 @@
               it's connected to a Database i.e MySQL using JDBC.
             </p>
             <a href="/HTML/BankManagment.html">
-              <button class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300">Read More</button>
+              <button
+                class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300 hover:bg-red-400"
+              >
+                Read More
+              </button>
             </a>
           </div>
 
@@ -145,39 +156,46 @@
 
             <h2 class="text-lg font-bold uppercase">Natours Website</h2>
             <p class="text-center">
-              Natours is a website template. It's a sleek and modern
-              showcase for the travel industry. Perfect for travel blogs, tour
-              bookings
+              Natours is a website template. It's a sleek and modern showcase
+              for the travel industry. Perfect for travel blogs, tour bookings
             </p>
             <a href="/HTML/Natours.html">
-              <button class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300">Read More</button>
+              <button
+                class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300 hover:bg-red-400"
+              >
+                Read More
+              </button>
             </a>
           </div>
 
           <div
             class="flex flex-col items-center mt-6 px-3 py-4 border border-black bg-gray-900 space-y-4 rounded-lg"
           >
-          <a href="/HTML/FlappyBird.html">
-            <img
-              src="/Images/flappyBird.jpg"
-              class="w-20 h-20 rounded-full border-2 border-black"
-            />
-          </a>
-            
+            <a href="/HTML/FlappyBird.html">
+              <img
+                src="/Images/flappyBird.jpg"
+                class="w-20 h-20 rounded-full border-2 border-black"
+              />
+            </a>
+
             <h2 class="text-lg font-bold uppercase">Flappy Bird</h2>
             <p class="text-center">
               Flappy Bird is an arcade-style game in which the player controls
               the bird Faby, which moves persistently to the right.
             </p>
             <a href="/HTML/FlappyBird.html">
-              <button class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300">Read More</button>
+              <button
+                class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300 hover:bg-red-400"
+              >
+                Read More
+              </button>
             </a>
           </div>
         </div>
       </div>
 
       <!--------------- CONTACT ME  ------------------>
-      <div class="m-5 md:m-5 relative">
+      <div id="contactMe" class="m-5 md:m-5 relative">
         <h2 class="text-3xl md:text-6xl font-bold text-center">
           Contact With Me
         </h2>
@@ -186,13 +204,18 @@
             <img src="/Images/ContactMe.jpeg" class="w-52 h-52 mt-4 mx-auto" />
           </div>
 
-          <div class="md:p-10 flex flex-col space-y-5 flex-grow md:border">
+          <form action="https://formspree.io/f/mknldnoe"
+            id="myForm"
+            method="post"  
+          class="md:p-10 flex flex-col space-y-5 flex-grow md:border">
             <input
               class="text-center p-1.5 outline-none text-black border-b-2 border-blue-600"
               name="name"
               placeholder="Your Name"
+              required
             />
             <input
+              id="email"
               class="text-center p-1.5 outline-none text-black border-b-2 border-blue-600"
               type="email"
               name="email"
@@ -204,12 +227,9 @@
               placeholder="Your Message"
               rows="4"
             ></textarea>
-            <input
-              type="button"
-              class="bg-white rounded-lg text-center border-2 border-blue-600 p-2 text-black outline-none font-semibold cursor-pointer mt-auto"
-              value="Send Message"
-            />
-          </div>
+            <button type="submit" class="bg-white rounded-lg text-center border-2 border-blue-600 p-2 text-black outline-none font-semibold cursor-pointer mt-auto"
+            >Send</button>
+            </form>
         </div>
       </div>
 
@@ -220,9 +240,15 @@
         <div>
           <h3 class="font-bold">Quick Links</h3>
           <div class="flex space-x-7">
-            <a href="#aboutMe">About Me</a>
-            <a href="#">Terms & Condition</a>
-            <a href="#">Contact Me</a>
+            <a href="#aboutMe" class="active:text-blue-300 hover:text-blue-500"
+              >About Me</a
+            >
+            <a href="#" class="active:text-blue-300 hover:text-blue-500"
+              >Terms & Condition</a
+            >
+            <a href="#contactMe" class="active:text-blue-300 hover:text-blue-500"
+              >Contact Me</a
+            >
           </div>
         </div>
         <div>
@@ -235,11 +261,16 @@
       </div>
     </main>
 
+    <script>
+      document.getElementById("myForm").reset();
+    </script>
     <!-- To prevent img download  -->
     <!-- <script>
       document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
       });
     </script> -->
+
+    
   </body>
 </html>
