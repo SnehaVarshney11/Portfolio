@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="font-sans">
+
+<div class="bg-gray-800 text-white">
+  <a href="#home" class="hidden md:inline-block py-2 px-4 active">Home</a>
+  <a href="#news" class="hidden md:inline-block py-2 px-4">News</a>
+  <a href="#contact" class="hidden md:inline-block py-2 px-4">Contact</a>
+  <a href="#about" class="hidden md:inline-block py-2 px-4">About</a>
+  <a href="javascript:void(0);" class="block py-2 px-4 md:hidden" onclick="toggleNav()">
+    <i id="menuIcon" class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="p-4">
+  <h2 class="text-2xl font-bold">Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+function toggleNav() {
+  var navLinks = document.querySelectorAll('.bg-gray-800 a:not(.fa-bars)');
+  navLinks.forEach(link => link.classList.toggle('hidden'));
+  
+  var menuIcon = document.getElementById('menuIcon');
+  menuIcon.classList.toggle('fa-bars', !menuIcon.classList.contains('fa-bars'));
+  menuIcon.classList.toggle('fa-times', !menuIcon.classList.contains('fa-times'));
+}
+</script>
+
+</body>
+</html>

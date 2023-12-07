@@ -5,30 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body class="bg-black m-0 p-0 text-justify">
     <main class="text-white">
-      <div
-        class="text-sm flex justify-between font-semibold bg-white text-black p-4 top-0 w-full fixed"
-      >
-        <h3>Portfolio</h3>
-        <ul class="flex space-x-3 uppercase">
-          <li class="">
-            <a href="#">Home</a>
-          </li>
-          <li class="">
-            <a href="#">About</a>
-          </li>
-          <li class="">
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+      
+    <!-- <a href="/HTML/Header.html">Header </a> -->
+      <div class="sticky top-0" id="header-container"></div>
       <div class="m-10 mt-36 text-center">
         <h1
           class="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text"
@@ -205,10 +193,12 @@
             <img src="/Images/ContactMe.jpeg" class="w-52 h-52 mt-4 mx-auto" />
           </div>
 
-          <form action="https://formspree.io/f/mknldnoe"
+          <form
+            action="https://formspree.io/f/mknldnoe"
             id="myForm"
-            method="post"  
-          class="md:p-10 flex flex-col space-y-5 flex-grow md:border">
+            method="post"
+            class="md:p-10 flex flex-col space-y-5 flex-grow md:border"
+          >
             <input
               class="text-center p-1.5 outline-none text-black border-b-2 border-blue-600"
               name="name"
@@ -228,9 +218,13 @@
               placeholder="Your Message"
               rows="4"
             ></textarea>
-            <button type="submit" class="bg-white rounded-lg text-center border-2 border-blue-600 p-2 text-black outline-none font-semibold cursor-pointer mt-auto"
-            >Send</button>
-            </form>
+            <button
+              type="submit"
+              class="bg-white rounded-lg text-center border-2 border-blue-600 p-2 text-black outline-none font-semibold cursor-pointer mt-auto"
+            >
+              Send
+            </button>
+          </form>
         </div>
       </div>
 
@@ -244,10 +238,14 @@
             <a href="#aboutMe" class="active:text-blue-300 hover:text-blue-500"
               >About Me</a
             >
-            <a href="/HTML/Terms&Cond.html" class="active:text-blue-300 hover:text-blue-500"
+            <a
+              href="/HTML/Terms&Cond.html"
+              class="active:text-blue-300 hover:text-blue-500"
               >Terms & Condition</a
             >
-            <a href="/HTML/PrivacyPolicy.html" class="active:text-blue-300 hover:text-blue-500"
+            <a
+              href="/HTML/PrivacyPolicy.html"
+              class="active:text-blue-300 hover:text-blue-500"
               >Privacy Policy</a
             >
           </div>
@@ -256,13 +254,13 @@
           <h3 class="font-bold">Follow Me On</h3>
           <div class="flex space-x-5">
             <a href="https://www.linkedin.com/in/var-sneha/">
-              <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+              <i class="fa fa-linkedin-square" style="font-size: 24px"></i>
             </a>
             <a href="https://github.com/SnehaVarshney11">
-              <i class="fa fa-github" style="font-size:24px"></i>
+              <i class="fa fa-github" style="font-size: 24px"></i>
             </a>
             <a href="https://leetcode.com/Sneha_Varshney/">
-              <i class="fa fa-code" style="font-size:24px"></i>
+              <i class="fa fa-code" style="font-size: 24px"></i>
             </a>
           </div>
         </div>
@@ -272,13 +270,25 @@
     <script>
       document.getElementById("myForm").reset();
     </script>
+
+    <script>
+      // Fetch and include the content of the header.html file
+      document.addEventListener("DOMContentLoaded", function () {
+  fetch("/HTML/Header.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("header-container").innerHTML = html;
+    })
+    .catch((error) =>
+      console.error("Error fetching header.html:", error)
+    );
+});
+    </script>
     <!-- To prevent img download  -->
     <!-- <script>
       document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
       });
     </script> -->
-
-    
   </body>
 </html>
