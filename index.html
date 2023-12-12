@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link href="output.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -274,7 +274,7 @@
     <script>
       // Fetch and include the content of the header.html file
       document.addEventListener("DOMContentLoaded", function () {
-  fetch("/Header.html")
+  fetch("/HTML/Header.html")
     .then((response) => response.text())
     .then((html) => {
       document.getElementById("header-container").innerHTML = html;
