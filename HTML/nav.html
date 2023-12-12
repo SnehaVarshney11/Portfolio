@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Toggle Navigation</title>
     <style>
         .toggle-content {
@@ -12,6 +13,8 @@
             transform: translateX(100%);
             transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
             opacity: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+
         }
 
         .toggle-content.visible {
@@ -30,11 +33,15 @@
     </div>
 
     <div id="toggleContent"
-        class="toggle-content p-4 h-full w-full bg-white fixed text-center text-3xl 
+        class="toggle-content p-4 h-full w-full  fixed text-center text-3xl 
         transform translate-x-full transition-transform duration-300 ease-in-out">
-        <a href="#" class="block py-2 text-purple-500">Link 1</a>
-        <a href="#" class="block py-2 text-purple-500">Link 2</a>
-        <a href="#" class="block py-2 text-purple-500">Link 3</a>
+        <div class="flex flex-col md:text-4xl font-bold space-y-7 mt-32 uppercase">
+          <a href="#aboutMe" class="hover:transition hover:ease-out hover:-translate-y-1 hover:bg-blue-950">About Me</a>
+          <a href="#experience" class="hover:transition hover:ease-out hover:-translate-y-1 hover:bg-blue-950">Experience</a>
+          <a href="#projects" class="hover:transition hover:ease-out hover:-translate-y-1 hover:bg-blue-950">Projects</a>
+          <a href="#contactMe" class="hover:transition hover:ease-out hover:-translate-y-1 hover:bg-blue-950">Contact Me</a>
+        </div>
+        
     </div>
 </body>
 

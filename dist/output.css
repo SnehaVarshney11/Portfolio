@@ -538,16 +538,8 @@ video {
   visibility: visible;
 }
 
-.relative {
-  position: relative;
-}
-
 .sticky {
   position: sticky;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .m-0 {
@@ -616,12 +608,12 @@ video {
   height: 13rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-20 {
