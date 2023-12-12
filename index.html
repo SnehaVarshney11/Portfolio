@@ -6,6 +6,7 @@
     <title>Index</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,9 +15,7 @@
 
   <body class="bg-black m-0 p-0 text-justify">
     <main class="text-white">
-      
-    <!-- <a href="/HTML/Header.html">Header </a> -->
-      <div class="sticky top-0" id="header-container"></div>
+      <div class="sticky top-0 h-full w-full" id="navigation"></div>
       <div class="m-10 mt-36 text-center">
         <h1
           class="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text"
@@ -271,19 +270,40 @@
       document.getElementById("myForm").reset();
     </script>
 
-    <script>
-      // Fetch and include the content of the header.html file
-      document.addEventListener("DOMContentLoaded", function () {
-  fetch("/HTML/Header.html")
-    .then((response) => response.text())
-    .then((html) => {
-      document.getElementById("header-container").innerHTML = html;
-    })
-    .catch((error) =>
-      console.error("Error fetching header.html:", error)
-    );
-});
-    </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      fetch("/HTML/nav.html")
+          .then((response) => response.text())
+          .then((html) => {
+              document.getElementById("navigation").innerHTML = html;
+              // Now that the navigation content is loaded, add the event listeners
+              const toggleBtn = document.getElementById('toggleBtn');
+              const toggleContent = document.getElementById('toggleContent');
+
+              toggleBtn.addEventListener('click', () => {
+                  toggleContent.classList.toggle('visible');
+                  toggleContent.classList.toggle('translate-x-full');
+
+                  // Update the content of the button based on visibility
+                  const isContentVisible = toggleContent.classList.contains('visible');
+                  toggleBtn.innerHTML = isContentVisible ? '<span class="text-white">-</span>' : '<span class="text-white">+</span>';
+              });
+
+              // Make sure to close the navigation when a link is clicked
+              const navLinks = document.querySelectorAll('.toggle-content a');
+              navLinks.forEach(link => {
+                  link.addEventListener('click', () => {
+                      toggleContent.classList.remove('visible');
+                      toggleContent.classList.add('translate-x-full');
+                      toggleBtn.innerHTML = '<span class="text-white">+</span>';
+                  });
+              });
+          })
+          .catch((error) =>
+              console.error("Error fetching nav.html:", error)
+          );
+  });
+</script>
     <!-- To prevent img download  -->
     <!-- <script>
       document.addEventListener('contextmenu', function (e) {

@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Toggle Navigation</title>
+    <style>
+        .toggle-content {
+            display: block;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .toggle-content.visible {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
 </head>
-<body class="font-sans">
 
-<div class="bg-gray-800 text-white">
-  <a href="#home" class="hidden md:inline-block py-2 px-4 active">Home</a>
-  <a href="#news" class="hidden md:inline-block py-2 px-4">News</a>
-  <a href="#contact" class="hidden md:inline-block py-2 px-4">Contact</a>
-  <a href="#about" class="hidden md:inline-block py-2 px-4">About</a>
-  <a href="javascript:void(0);" class="block py-2 px-4 md:hidden" onclick="toggleNav()">
-    <i id="menuIcon" class="fa fa-bars"></i>
-  </a>
-</div>
+<body class="bg-black text-white">
 
-<div class="p-4">
-  <h2 class="text-2xl font-bold">Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
+    <div class="fixed top-4 right-4 z-10">
+        <button id="toggleBtn" class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+            <span class="text-white">+</span>
+        </button>
+    </div>
 
-<script>
-function toggleNav() {
-  var navLinks = document.querySelectorAll('.bg-gray-800 a:not(.fa-bars)');
-  navLinks.forEach(link => link.classList.toggle('hidden'));
-  
-  var menuIcon = document.getElementById('menuIcon');
-  menuIcon.classList.toggle('fa-bars', !menuIcon.classList.contains('fa-bars'));
-  menuIcon.classList.toggle('fa-times', !menuIcon.classList.contains('fa-times'));
-}
-</script>
-
+    <div id="toggleContent"
+        class="toggle-content p-4 h-full w-full bg-white fixed text-center text-3xl 
+        transform translate-x-full transition-transform duration-300 ease-in-out">
+        <a href="#" class="block py-2 text-purple-500">Link 1</a>
+        <a href="#" class="block py-2 text-purple-500">Link 2</a>
+        <a href="#" class="block py-2 text-purple-500">Link 3</a>
+    </div>
 </body>
+
 </html>
