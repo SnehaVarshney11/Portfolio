@@ -11,15 +11,16 @@
     <style>
         .toggle-content {
             display: block;
+            transform: translateX(100%);
             transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
             background: linear-gradient(to right, #141e30, #243b55);
-            opacity: 1; /* Set initial opacity to 1 */
-            transform: translateX(0); /* Set initial position to visible */
+
         }
 
-        .toggle-content.hidden {
-            transform: translateX(100%);
-            opacity: 0;
+        .toggle-content.visible {
+            transform: translateX(0);
+            opacity: 1;
         }
     </style>
 </head>
@@ -43,17 +44,6 @@
         </div>
         
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggleBtn = document.getElementById('toggleBtn');
-            const toggleContent = document.getElementById('toggleContent');
-
-            toggleBtn.addEventListener('click', () => {
-                toggleContent.classList.toggle('hidden');
-            });
-        });
-    </script>
 </body>
 
 </html>
