@@ -124,13 +124,21 @@
               It is a Java Application made using the Swing Package of Java and
               it's connected to a Database i.e MySQL using JDBC.
             </p>
-            <a href="/HTML/BankManagment.html" target="_blank">
+
+            <div id="bankManagementContent" class="hidden"></div>
+<button
+  onclick="loadBankManagementContent()"
+  class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300 hover:bg-red-400"
+>
+  Read More
+</button>
+            <!-- <a href="/HTML/BankManagment.html" target="_blank">
               <button
                 class="bg-red-500 px-4 py-2 rounded-lg active:bg-red-300 visited:bg-red-300 hover:bg-red-400"
               >
                 Read More
               </button>
-            </a>
+            </a> -->
           </div>
 
           <div
@@ -272,6 +280,19 @@
     <script>
       document.getElementById("myForm").reset();
     </script>
+
+<script>
+  function loadBankManagementContent() {
+    fetch("/BankManagment.html")
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById("bankManagementContent").innerHTML = html;
+        document.getElementById("bankManagementContent").classList.remove("hidden");
+        document.getElementById("bankManagementContent").scrollIntoView({ behavior: "smooth" });
+      })
+      .catch((error) => console.error("Error fetching BankManagment.html:", error));
+  }
+</script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
